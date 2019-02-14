@@ -1,7 +1,5 @@
 body{
     background-color: bisque;
-    font-family: 'Signika', sans-serif;
-    font-family: 'Exo 2', sans-serif;
 }
 
 /* .container *{
@@ -13,10 +11,16 @@ body{
     flex-direction: column;
 }
 
+/* Navigation and Header */
 .nav{
 display:flex;
 flex-wrap: wrap;
 justify-content: center;
+}
+
+h1,h3 {
+    font-family: 'Bowlby One SC', cursive;
+    text-align: center;
 }
 
 .nav .nav__logo{
@@ -25,7 +29,6 @@ justify-content: center;
     font-size: 2rem;
     padding: 20px;
     text-align: center;
-    font-family: 'Bowlby One SC', cursive;
 }
 
 .nav .nav__menu{
@@ -65,11 +68,53 @@ justify-content: center;
     font-size: 2rem;
     color: black;
 }
-
+/* Main Content */
 .main{
-
+display: flex;
+justify-content: space-around;
 }
 
-.footer{
+/* Sidebar */
+.aside{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+.aside__image__small{
+display: flex;
+flex-direction: column;
+}
+
+.aside__image__small img{
+    padding: 5px;
+    }
+
+
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    flex-basis: 70%;   
+}
+
+.main__content__article p{
+    padding: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+.figure{
+    display: flex;
+    justify-content: center;
+}
+
+.figure__pic img{
+    flex-basis: 300px;
+    flex-shrink: 3;
+}
+/* Footer */
+.footer{
+    font-family: 'Exo 2', sans-serif;
+    
 }
